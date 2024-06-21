@@ -25,6 +25,6 @@
 		"noUnusedParameters": true,
 		"noFallthroughCasesInSwitch": true
 	},
-	"include": ["src", "scripts"],
+	"include": ["src", "scripts", "webpack.config.ts"],
 	"references": [{ "path": "./tsconfig.node.json" }]
 }
