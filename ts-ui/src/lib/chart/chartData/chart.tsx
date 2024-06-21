@@ -56,7 +56,7 @@ function ChartTSData() {
 						onChange={(e) => {
 							const newVotes = [...votes];
 							newVotes[index] = Number(e.target.value);
-							dispatch(setVotes(newVotes)); // Dispatch the action to the Redux store
+							dispatch(setVotes(newVotes));
 						}}
 					/>
 				</div>
