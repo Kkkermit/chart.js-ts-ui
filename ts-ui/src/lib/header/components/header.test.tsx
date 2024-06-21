@@ -11,7 +11,7 @@ describe("Header", () => {
 	});
 
 	it("renders the title", () => {
-		const title = screen.getByText("Tic Tac Toe");
+		const title = screen.getByText("TypeScript Project");
 		expect(title).toBeInTheDocument();
 	});
 });

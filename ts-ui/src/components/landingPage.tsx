@@ -5,7 +5,7 @@ import "../styles/landingPage.css";
 function LandingPage() {
 	return (
 		<>
-			<div className="landing-page-container">
+			<div className="landing-page-container" data-testid="landing-page-container">
 				<div className="landing-page-inner-container">
 					<div className="landing-page-header-container">
 						<div className="landing-page-header">
