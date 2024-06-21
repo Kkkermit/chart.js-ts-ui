@@ -1,4 +1,4 @@
-import config from "../config/header.config.json";
+import { i18n } from "../../../i18n/index";
 import "../styles/header.css";
 
 function Header() {
@@ -7,7 +7,7 @@ function Header() {
 			{" "}
 			<div className="header-container">
 				<header className="header">
-					<h1 className="header-h">{config.header}</h1>
+					<h1 className="header-h">{i18n.t("headings.header")}</h1>
 				</header>
 			</div>
 		</>

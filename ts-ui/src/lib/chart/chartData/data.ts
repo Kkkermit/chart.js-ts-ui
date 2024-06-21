@@ -1,8 +1,17 @@
+import { i18n } from "../../../i18n/index";
+
 export const dataChartData = {
-	labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
+	labels: [
+		i18n.t("chartData.colorNames.red"),
+		i18n.t("chartData.colorNames.blue"),
+		i18n.t("chartData.colorNames.yellow"),
+		i18n.t("chartData.colorNames.green"),
+		i18n.t("chartData.colorNames.purple"),
+		i18n.t("chartData.colorNames.orange"),
+	],
 	datasets: [
 		{
-			label: "# of Votes",
+			label: i18n.t("chartData.numVotes"),
 			data: [12, 19, 3, 5, 2, 3],
 			backgroundColor: [
 				"rgba(255, 99, 132, 0.2)",
@@ -29,7 +38,7 @@ export const dataChartOptions = {
 	responsive: true,
 	maintainAspectRatio: false,
 	interaction: {
-		mode: "nearest",
+		mode: i18n.t("chartOptions.interaction.nearest"),
 		axis: "x",
 		intersect: false,
 	},
@@ -40,7 +49,7 @@ export const dataChartOptions = {
 		},
 		title: {
 			display: true,
-			text: "Advanced Chart.js Bar Chart",
+			text: i18n.t("chartOptions.plugins.title.chartTitle"),
 		},
 		tooltip: {
 			enabled: true,
@@ -54,14 +63,14 @@ export const dataChartOptions = {
 			display: true,
 			title: {
 				display: true,
-				text: "Colors",
+				text: i18n.t("chartOptions.scales.xAxes.xAxisLabel"),
 			},
 		},
 		y: {
 			display: true,
 			title: {
 				display: true,
-				text: "Votes",
+				text: i18n.t("chartOptions.scales.yAxes.yAxisLabel"),
 			},
 		},
 	},
