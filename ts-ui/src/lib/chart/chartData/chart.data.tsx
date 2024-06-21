@@ -45,7 +45,7 @@ function ChartTSData() {
 
 	return (
 		<div className="chart-data-container">
-			<canvas className="chart-data-canvas" ref={chartRef} />
+			<canvas className="chart-data-canvas" ref={chartRef} data-testid="chart" />
 			{dataChartData.labels.map((label, index) => (
 				<div key={label}>
 					<label>{label}</label>
