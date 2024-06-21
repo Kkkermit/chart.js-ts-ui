@@ -1,0 +1,59 @@
+.chart-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0;
+	padding: 0;
+	margin-top: 30px;
+}
+
+.chart-data-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 20px;
+	width: 100%;
+	max-width: 800px;
+	box-sizing: border-box;
+	overflow: auto;
+}
+
+.chart-data-canvas {
+	max-height: 80vh;
+	width: 100%;
+}
+
+.chart-data-container > div {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+	margin-top: 10px;
+}
+
+.chart-data-container > div > label {
+	flex: 1;
+	margin-right: 10px;
+}
+
+.chart-data-container > div > input {
+	flex: 1;
+	padding: 5px;
+}
+
+.chart-data-container label {
+	display: block;
+	margin-bottom: 5px;
+	font-size: 1rem;
+	color: #ffffff;
+	font-size: 24px;
+	font-weight: 900;
+}
+
+.chart-data-container input[type="number"] {
+	padding: 5px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	font-size: 1rem;
+	color: #333;
+}
