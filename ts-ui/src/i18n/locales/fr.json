@@ -1,0 +1,34 @@
+{
+	"headings": {
+		"header": "Projet TypeScript"
+	},
+	"chartData": {
+		"colorNames": {
+			"red": "Rouge",
+			"blue": "Bleue",
+			"yellow": "Jaune",
+			"green": "Verte",
+			"purple": "Violette",
+			"orange": "Orange"
+		},
+		"numVotes": "# des votes"
+	},
+	"chartOptions": {
+		"interaction": {
+			"nearest": "la plus proche"
+		},
+		"plugins": {
+			"title": {
+				"chartTitle": "Graphique à barres avancé Chart.js"
+			}
+		},
+		"scales": {
+			"yAxes": {
+				"yAxisLabel": "Votes"
+			},
+			"xAxes": {
+				"xAxisLabel": "Couleurs"
+			}
+		}
+	}
+}
