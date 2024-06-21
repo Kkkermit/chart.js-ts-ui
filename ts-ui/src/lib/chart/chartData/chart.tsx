@@ -1,4 +1,3 @@
-// ChartTSData.tsx
 import { useEffect, useRef } from "react";
 import { Chart as ChartJS, ChartData, ChartOptions, registerables } from "chart.js";
 import { dataChartData, dataChartOptions } from "./data";
