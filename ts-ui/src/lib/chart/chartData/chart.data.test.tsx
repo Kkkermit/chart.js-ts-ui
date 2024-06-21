@@ -27,4 +27,14 @@ describe("ChartTSData", () => {
 		fireEvent.change(voteInputs[0], { target: { value: "5" } });
 		expect(store.getState().votes.votes[0]).toBe(5);
 	});
+
+	it("should get the color names text", () => {
+		const { container } = render(
+			<Provider store={store}>
+				<ChartTSData />
+			</Provider>,
+		);
+		const colorNames = container.querySelector("label");
+		expect(colorNames).toBeInTheDocument();
+	});
 });

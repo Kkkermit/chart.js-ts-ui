@@ -3,6 +3,7 @@ import { Chart as ChartJS, ChartData, ChartOptions, registerables } from "chart.
 import { dataChartData, dataChartOptions } from "./data";
 import { useDispatch, useSelector } from "react-redux";
 import { setVotes } from "../../../redux/vote.slice";
+import { RootState } from "../../../redux/vote.store";
 
 import "../styles/chart.css";
 
@@ -13,7 +14,8 @@ function ChartTSData() {
 	const chartInstanceRef = useRef<ChartJS | null>(null);
 
 	const dispatch = useDispatch();
-	const votes = useSelector((state) => state.votes.votes);
+
+	const votes = useSelector((state: RootState) => state.votes.votes);
 
 	useEffect(() => {
 		if (chartRef && chartRef.current) {
