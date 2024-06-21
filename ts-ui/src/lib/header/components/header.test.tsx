@@ -12,7 +12,7 @@ describe("Header", () => {
 	});
 
 	it("renders the title", () => {
-		const title = screen.getByText(i18n.t("header"));
+		const title = screen.getByText(i18n.t("headings.header"));
 		expect(title).toBeInTheDocument();
 	});
 });
