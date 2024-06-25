@@ -9,5 +9,23 @@
 	<body>
 		<div id="root"></div>
 		<script type="module" src="/src/main.tsx"></script>
+		<script>
+			const titleText = "TypeScript Project | @online";
+			let index = 0;
+			let direction = 1;
+
+			function updateTitle() {
+				document.title = titleText.substr(0, index);
+				index += direction;
+				if (index > titleText.length) {
+					direction = -1;
+				} else if (index < 0) {
+					direction = 1;
+				}
+				setTimeout(updateTitle, 200);
+			}
+
+			updateTitle();
+		</script>
 	</body>
 </html>
