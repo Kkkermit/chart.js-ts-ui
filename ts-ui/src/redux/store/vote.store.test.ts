@@ -1,5 +1,5 @@
 import { configureStore } from "@reduxjs/toolkit";
-import votesReducer, { setVotes } from "./vote.slice";
+import votesReducer, { setVotes } from "../slice/vote.slice";
 import { describe, it, expect, beforeEach } from "vitest";
 
 describe("votes store", () => {

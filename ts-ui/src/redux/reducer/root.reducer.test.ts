@@ -1,6 +1,6 @@
 import { configureStore } from "@reduxjs/toolkit";
 import rootReducer from "./root.reducer";
-import { RESET_STORE } from "./action.redux";
+import { RESET_STORE } from "../action/action.redux";
 import { describe, it, expect } from "vitest";
 
 describe("rootReducer", () => {

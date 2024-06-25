@@ -2,8 +2,8 @@ import { describe, it, expect, beforeEach, afterEach } from "vitest";
 import { render, screen } from "@testing-library/react";
 import { Provider } from "react-redux";
 import LandingPage from "./landingPage";
-import { store } from "../redux/vote.store";
-import { resetStore } from "../redux/action.redux";
+import { store } from "../redux/store/vote.store";
+import { resetStore } from "../redux/action/action.redux";
 import { i18n } from "../i18n/index";
 
 describe("landing page", () => {

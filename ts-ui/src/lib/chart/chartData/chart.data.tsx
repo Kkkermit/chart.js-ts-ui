@@ -2,8 +2,8 @@ import { useEffect, useRef } from "react";
 import { Chart as ChartJS, ChartData, ChartOptions, registerables } from "chart.js";
 import { dataChartData, dataChartOptions } from "./data";
 import { useDispatch, useSelector } from "react-redux";
-import { setVotes } from "../../../redux/vote.slice";
-import { RootState } from "../../../redux/vote.store";
+import { setVotes } from "../../../redux/slice/vote.slice";
+import { RootState } from "../../../redux/store/vote.store";
 
 import "../styles/chart.css";
 

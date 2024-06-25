@@ -1,7 +1,7 @@
 import { render, fireEvent, screen } from "@testing-library/react";
 import { Provider } from "react-redux";
 import { configureStore } from "@reduxjs/toolkit";
-import voteReducer from "../../../redux/vote.slice";
+import voteReducer from "../../../redux/slice/vote.slice.ts";
 import ChartTSData from "./chart.data.tsx";
 import { describe, it, expect, beforeEach } from "vitest";
 

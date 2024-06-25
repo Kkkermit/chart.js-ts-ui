@@ -1,6 +1,6 @@
 import { combineReducers } from "redux";
-import { RESET_STORE } from "./action.redux";
-import voteReducer from "./vote.slice";
+import { RESET_STORE } from "../action/action.redux";
+import voteReducer from "../slice/vote.slice";
 
 const appReducer = combineReducers({
 	voteReducer,
