@@ -91,4 +91,19 @@ describe("i18n", () => {
 		expect(i18n.t("chartOptions.scales.yAxes.yAxisLabel")).toBe("Votes");
 		expect(i18n.t("chartOptions.scales.xAxes.xAxisLabel")).toBe("Couleurs");
 	});
+
+	it("should translate the chart type correctly", () => {
+		i18n.changeLanguage("en");
+		expect(i18n.t("chartType.bar")).toBe("Bar");
+		expect(i18n.t("chartType.line")).toBe("Line");
+		expect(i18n.t("chartType.pie")).toBe("Pie");
+		i18n.changeLanguage("es");
+		expect(i18n.t("chartType.bar")).toBe("Barra");
+		expect(i18n.t("chartType.line")).toBe("Línea");
+		expect(i18n.t("chartType.pie")).toBe("Pastel");
+		i18n.changeLanguage("fr");
+		expect(i18n.t("chartType.bar")).toBe("Barre");
+		expect(i18n.t("chartType.line")).toBe("Ligne");
+		expect(i18n.t("chartType.pie")).toBe("Tarte");
+	});
 });
