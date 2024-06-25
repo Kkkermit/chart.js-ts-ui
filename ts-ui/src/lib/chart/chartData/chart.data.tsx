@@ -75,28 +75,30 @@ function ChartTSData() {
 	}, [votes, dispatch]);
 
 	return (
-		<div className="chart-data-container">
-			<select value={chartType} onChange={(e) => dispatch(setChartType(e.target.value as "pie" | "bar" | "line"))}>
-				<option value="pie">{i18n.t("chartType.pie")}</option>
-				<option value="bar">{i18n.t("chartType.bar")}</option>
-				<option value="line">{i18n.t("chartType.line")}</option>
-			</select>
-			<canvas className="chart-data-canvas" ref={chartRef} data-testid="chart" />
-			{dataChartData.labels.map((label, index) => (
-				<div key={label}>
-					<label>{label}</label>
-					<input
-						type="number"
-						value={votes[index]}
-						onChange={(e) => {
-							const newVotes = [...votes];
-							newVotes[index] = Number(e.target.value);
-							dispatch(setVotes(newVotes));
-						}}
-					/>
-				</div>
-			))}
-		</div>
+		<>
+			<div className="chart-data-container">
+				<select value={chartType} onChange={(e) => dispatch(setChartType(e.target.value as "pie" | "bar" | "line"))}>
+					<option value="pie">{i18n.t("chartType.pie")}</option>
+					<option value="bar">{i18n.t("chartType.bar")}</option>
+					<option value="line">{i18n.t("chartType.line")}</option>
+				</select>
+				<canvas className="chart-data-canvas" ref={chartRef} data-testid="chart" />
+				{dataChartData.labels.map((label, index) => (
+					<div key={label}>
+						<label>{label}</label>
+						<input
+							type="number"
+							value={votes[index]}
+							onChange={(e) => {
+								const newVotes = [...votes];
+								newVotes[index] = Number(e.target.value);
+								dispatch(setVotes(newVotes));
+							}}
+						/>
+					</div>
+				))}
+			</div>
+		</>
 	);
 }
 
