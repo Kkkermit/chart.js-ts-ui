@@ -5,6 +5,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { setChartType, setVotes } from "../../../redux/slice/vote.slice";
 import { RootState } from "../../../redux/store/vote.store";
 import { i18n } from "../../../i18n/index";
+import { fetchVotes, saveVotes } from "../../../redux/action/action.redux";
 
 import "../styles/chart.css";
 
@@ -66,15 +67,12 @@ function ChartTSData() {
 	}, [votes, chartType]);
 
 	useEffect(() => {
-		const savedVotes = localStorage.getItem("votes");
-		if (savedVotes) {
-			dispatch(setVotes(JSON.parse(savedVotes)));
-		}
+		dispatch(fetchVotes() as any);
 	}, [dispatch]);
 
 	useEffect(() => {
-		localStorage.setItem("votes", JSON.stringify(votes));
-	}, [votes]);
+		dispatch(saveVotes(votes) as any);
+	}, [votes, dispatch]);
 
 	return (
 		<div className="chart-data-container">
