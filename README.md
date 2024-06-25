@@ -31,12 +31,14 @@ After running the project, you will see a chart and a dropdown menu for selectin
 
 ### 🛠️ Built With
 
-- Chart.js
-- TypeScript
-- Redux
+- [Chart.js](https://www.chartjs.org/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Redux](https://redux.js.org/)
 
 ### 📝 License
 
 **Distributed under the MIT License. See LICENSE for more information.**
 
 - Project Link: https://github.com/Kkkermit/chart.js-ts-ui.git
+
+# ⭐ If you a fan of this repo or are using it, please consider leaving a star ⭐
