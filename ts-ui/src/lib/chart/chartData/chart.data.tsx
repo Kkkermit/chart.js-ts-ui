@@ -65,6 +65,17 @@ function ChartTSData() {
 		}
 	}, [votes, chartType]);
 
+	useEffect(() => {
+		const savedVotes = localStorage.getItem("votes");
+		if (savedVotes) {
+			dispatch(setVotes(JSON.parse(savedVotes)));
+		}
+	}, [dispatch]);
+
+	useEffect(() => {
+		localStorage.setItem("votes", JSON.stringify(votes));
+	}, [votes]);
+
 	return (
 		<div className="chart-data-container">
 			<select value={chartType} onChange={(e) => dispatch(setChartType(e.target.value as "pie" | "bar" | "line"))}>
