@@ -33,5 +33,10 @@
 				"xAxisLabel": "Colores"
 			}
 		}
+	},
+	"chartType": {
+		"bar": "Barra",
+		"line": "Línea",
+		"pie": "Pastel"
 	}
 }

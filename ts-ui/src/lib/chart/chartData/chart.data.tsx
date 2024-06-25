@@ -4,6 +4,7 @@ import { dataChartData, dataChartOptions } from "./data";
 import { useDispatch, useSelector } from "react-redux";
 import { setChartType, setVotes } from "../../../redux/slice/vote.slice";
 import { RootState } from "../../../redux/store/vote.store";
+import { i18n } from "../../../i18n/index";
 
 import "../styles/chart.css";
 
@@ -67,9 +68,9 @@ function ChartTSData() {
 	return (
 		<div className="chart-data-container">
 			<select value={chartType} onChange={(e) => dispatch(setChartType(e.target.value as "pie" | "bar" | "line"))}>
-				<option value="pie">Pie</option>
-				<option value="bar">Bar</option>
-				<option value="line">Line</option>
+				<option value="pie">{i18n.t("chartType.pie")}</option>
+				<option value="bar">{i18n.t("chartType.bar")}</option>
+				<option value="line">{i18n.t("chartType.line")}</option>
 			</select>
 			<canvas className="chart-data-canvas" ref={chartRef} data-testid="chart" />
 			{dataChartData.labels.map((label, index) => (

@@ -33,5 +33,10 @@
 				"xAxisLabel": "Colors"
 			}
 		}
+	},
+	"chartType": {
+		"bar": "Bar",
+		"line": "Line",
+		"pie": "Pie"
 	}
 }
