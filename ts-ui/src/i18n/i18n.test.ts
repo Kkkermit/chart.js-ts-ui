@@ -10,6 +10,25 @@ describe("i18n", () => {
 		await i18n.changeLanguage("es");
 		expect(i18n.language).toBe("es");
 	});
+
+	it("should be able to change language to French", async () => {
+		await i18n.changeLanguage("fr");
+		expect(i18n.language).toBe("fr");
+	});
+
+	it("should translate the welcome screen text", () => {
+		i18n.changeLanguage("en");
+		expect(i18n.t("welcomeScreen.welcomeMessage")).toBe("Welcome to the TypeScript Project! Click anywhere to enter!");
+		i18n.changeLanguage("es");
+		expect(i18n.t("welcomeScreen.welcomeMessage")).toBe(
+			"¡Bienvenido al Proyecto TypeScript! ¡Haga clic en cualquier lugar para ingresar!",
+		);
+		i18n.changeLanguage("fr");
+		expect(i18n.t("welcomeScreen.welcomeMessage")).toBe(
+			"Bienvenue dans le projet TypeScript ! Cliquez n'importe où pour participer !",
+		);
+	});
+
 	it("should translate the header correctly", () => {
 		i18n.changeLanguage("en");
 		expect(i18n.t("headings.header")).toBe("TypeScript Project");

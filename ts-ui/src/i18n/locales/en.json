@@ -1,4 +1,7 @@
 {
+	"welcomeScreen": {
+		"welcomeMessage": "Welcome to the TypeScript Project! Click anywhere to enter!"
+	},
 	"headings": {
 		"header": "TypeScript Project"
 	},
