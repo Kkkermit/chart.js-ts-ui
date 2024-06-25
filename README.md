@@ -41,4 +41,4 @@ After running the project, you will see a chart and a dropdown menu for selectin
 
 - Project Link: https://github.com/Kkkermit/chart.js-ts-ui.git
 
-# ⭐ If you a fan of this repo or are using it, please consider leaving a star ⭐
+# ⭐ If you are a fan of this repo or are using it, please consider leaving a star ⭐
