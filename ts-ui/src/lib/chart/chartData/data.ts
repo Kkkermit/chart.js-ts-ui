@@ -1,5 +1,5 @@
 import { i18n } from "../../../i18n/index";
-import { backgroundColor, borderColor } from "./dataset";
+import { dataset } from "./dataset";
 
 export const dataChartData = {
 	labels: [
@@ -12,11 +12,7 @@ export const dataChartData = {
 	],
 	datasets: [
 		{
-			label: i18n.t("chartData.numVotes"),
-			data: [12, 19, 3, 5, 2, 3],
-			backgroundColor: [...backgroundColor],
-			borderColor: [...borderColor],
-			borderWidth: 3,
+			...dataset,
 		},
 	],
 };
